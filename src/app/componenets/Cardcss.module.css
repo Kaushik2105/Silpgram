@@ -1,0 +1,45 @@
+.card{
+    background-color: #fbfaef;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.product_name{
+    color: #8c8b88;
+    font-size: 25px;
+}
+
+.data{
+    padding: 5%;
+}
+
+.product_image{
+    height: 100%;
+    max-height: 300px;
+    width: 100%;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display_price{
+    font-size: 25px;
+    color:#f0af4a ;
+}
+
+.original_price{
+    font-size: 20px;
+    color:#e3e2da ;
+}
+
+.offer{
+    font-size: 25px;
+    font-style: bold;
+    color: #157b2a;
+    background-color: transparent;
+}

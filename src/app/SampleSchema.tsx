@@ -1,0 +1,118 @@
+const Product_schema = [
+  {
+    name: "product 1",
+    id: 1,
+    rating: 1,
+    price: 10000,
+    offer: 20,
+    category: "accessories",
+    product_description: "pta nhi",
+    image: "./productslider/1.png",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+  {
+    name: "product 2",
+    id: 2,
+    rating: 2,
+    price: 10000,
+    offer: 20,
+    category: "accessries",
+    product_description: "pta nhi",
+    image: "./productslider/2.jpeg",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+  {
+    name: "product 3",
+    rating: 3,
+    id: 3,
+    price: 10000,
+    offer: 20,
+    category: "accessries",
+    product_description: "pta nhi",
+    image: "./productslider/3.jpeg",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+  {
+    name: "product 4",
+    id: 4,
+    rating: 4,
+    price: 10000,
+    offer: 20,
+    category: "accessries",
+    product_description: "pta nhi",
+    image: "./productslider/4.jpeg",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+  {
+    name: "product 5",
+    id: 5,
+    rating: 5,
+    price: 10000,
+    offer: 20,
+    category: "accessries",
+    product_description: "pta nhi",
+    image: "./productslider/5.jpeg",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+  {
+    name: "product 6",
+    id: 6,
+    rating: 3,
+    price: 10000,
+    offer: 20,
+    category: "accessries",
+    product_description: "pta nhi",
+    image: "./productslider/2.jpeg",
+    other_images: [
+      {
+        img1: "./",
+        img2: "./",
+        img3: "./",
+        img4: "./",
+        img5: "./",
+      },
+    ],
+  },
+];
+
+export default Product_schema;
