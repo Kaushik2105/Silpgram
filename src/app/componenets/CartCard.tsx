@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import photo from "../../../public/h.jpeg"
 import { XCircle } from "lucide-react";
 
 function Card(props: { name: string; quantity: number; price: number }) {
@@ -7,7 +8,7 @@ function Card(props: { name: string; quantity: number; price: number }) {
     <div className="bg-white rounded-md md:w-11/12 h-1/4 md:flex md:flex-row md:justify-between sm:flex sm:flex-row m-5">
       <div className="md:flex md:flex-row sm:flex sm:flex-row">
         <img
-          src="/h.png"
+          src="../../../public/h.jpeg"
           alt="logo"
           className="h-[200px] w-full md:w-[160px] md:h-[160px] sm:w-max items-center p-3 rounded-md"
         />

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import Link from "next/link";
+import {Link} from "react-router-dom"
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -33,11 +33,11 @@ function Navbar() {
         <div className="items-center justify-between my-auto mx-auto lg:max-w-7xl md:items-center md:flex mt-5">
           <div>
             <div className="flex items-center justify-between md:py-5 md:block">
-              <Link href="/">
+              <Link to="/">
                 <Image
                   src="/8-removebg-preview.png"
-                  height={100}
-                  width={320}
+                  height={150}
+                  width={370}
                   alt="logo"
                 />
               </Link>
@@ -51,10 +51,10 @@ function Navbar() {
                     <MenuIcon width={30} height={30} alt="logo" />
                   ) : (
                     <MenuIcon
-                      width={30}
-                      height={30}
                       alt="logo"
                       className="focus:border-none active:border-none"
+                      width={30}
+                      height={30}
                     />
                   )}
                 </button>
@@ -71,20 +71,20 @@ function Navbar() {
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  md:hover:bg-transparent">
                   <Link
                     className="flex justify-center align-middle"
-                    href="#about"
+                    to="/about"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <input
                       placeholder=" Search for kitchen, paintings, decorware and more"
-                      className="w-[571px] h-[44px] outline-none rounded-lg"
+                      className="w-[560px] h-[40px] outline-none rounded-lg text-black"
                     ></input>
-                    <SearchIcon />
+                    <SearchIcon className="mt-2 ml-2 text-black" />
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  md:hover:bg-transparent">
                   <Link
-                    className="flex"
-                    href="#Wishlist"
+                    className="flex text-black"
+                    to="#Wishlist"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <FavoriteIcon />
@@ -93,8 +93,8 @@ function Navbar() {
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  md:hover:bg-transparent">
                   <Link
-                    className="flex"
-                    href="#Cart"
+                    className="flex text-black"
+                    to="/cart"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <ShoppingCartIcon />
@@ -103,8 +103,8 @@ function Navbar() {
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:bg-transparent">
                   <Link
-                    className="flex"
-                    href="#Notifications"
+                    className="flex text-black"
+                    to="#Notifications"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <NotificationsIcon />
@@ -112,7 +112,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href="#Sign-In" onClick={() => setNavbar(!navbar)}>
+                  <Link to="#Sign-In" onClick={() => setNavbar(!navbar)}>
                     <div>
                       <button
                         className="bg-[#f8fafc] text-black w-[100px] py-2 rounded-full hover:bg-slate-600"

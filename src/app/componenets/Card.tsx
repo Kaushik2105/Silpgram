@@ -1,9 +1,18 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Card } from "@mui/material";
 
 import styles from "./Cardcss.module.css";
 
-const ProductCard = ({ product }) => {
+// Define a type for the product prop
+type Product = {
+  image: string;
+  name: string;
+  price: number;
+  offer: number;
+};
+
+// Use the defined type for the product prop
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
     <Card className={styles.card}>
       <img src={product.image} alt="" />

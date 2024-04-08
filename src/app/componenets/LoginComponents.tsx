@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+  signinIn: boolean; // Specify the type of signinIn as boolean
+}
+
+export const Container = styled.div<ContainerProps>`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -12,7 +16,7 @@ export const Container = styled.div`
   left: 20%;
 `;
 
-export const SignUpContainer = styled.div`
+export const SignUpContainer = styled.div<ContainerProps>`
   position: absolute;
   top: 0;
   height: 100%;
@@ -32,7 +36,7 @@ export const SignUpContainer = styled.div`
       : null}
 `;
 
-export const SignInContainer = styled.div`
+export const SignInContainer = styled.div<ContainerProps>`
   position: absolute;
   top: 0;
   height: 100%;
@@ -98,7 +102,7 @@ export const Anchor = styled.a`
   text-decoration: none;
   margin: 15px 0;
 `;
-export const OverlayContainer = styled.div`
+export const OverlayContainer = styled.div<ContainerProps>`
   position: absolute;
   top: 0;
   left: 50%;
@@ -111,7 +115,7 @@ export const OverlayContainer = styled.div`
     props.signinIn !== true ? `transform: translateX(-100%);` : null}
 `;
 
-export const Overlay = styled.div`
+export const Overlay = styled.div<ContainerProps>`
   background-image: url("./Login/girl.png");
   background-color: #ff912b;
   background-repeat: no-repeat;
@@ -127,7 +131,7 @@ export const Overlay = styled.div`
   ${(props) => (props.signinIn !== true ? `transform: translateX(50%);` : null)}
 `;
 
-export const OverlayPanel = styled.div`
+export const OverlayPanel = styled.div<ContainerProps>`
   position: absolute;
   display: flex;
   align-items: center;
@@ -142,12 +146,12 @@ export const OverlayPanel = styled.div`
   transition: transform 0.6s ease-in-out;
 `;
 
-export const LeftOverlayPanel = styled(OverlayPanel)`
+export const LeftOverlayPanel = styled(OverlayPanel)<ContainerProps>`
   transform: translateX(-20%);
   ${(props) => (props.signinIn !== true ? `transform: translateX(0);` : null)}
 `;
 
-export const RightOverlayPanel = styled(OverlayPanel)`
+export const RightOverlayPanel = styled(OverlayPanel)<ContainerProps>`
   right: 0;
   transform: translateX(0);
   background-color: #ff912b;

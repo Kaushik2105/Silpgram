@@ -48,8 +48,8 @@ export default function RecentlyViewedSlider() {
         }}
         className="mySwiper "
       >
-        {Product_schema.map((product) => (
-          <SwiperSlide className="mySwiperSlide">
+        {Product_schema.map((product, index) => (
+          <SwiperSlide key={index} className="mySwiperSlide">
             <ProductCard product={product} />
           </SwiperSlide>
         ))}

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,31 +36,31 @@ export default function ShopByCategorySlider() {
       >
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
-            <img className={styles.image} src="./productslider/1.png" />
+            <img className={styles.image} src="/productslider/1.png" alt="prodimg" />
             <div className={styles.desc}>Kitchenware</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
-            <img className={styles.image} src="./productslider/2.jpeg" />
+            <img className={styles.image} src="/productslider/2.jpeg" alt="prodimg" />
             <div className={styles.desc}>Paintings</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
-            <img className={styles.image} src="./productslider/3.jpeg" />
+            <img className={styles.image} src="/productslider/3.jpeg" alt="prodimg" />
             <div className={styles.desc}>Paintings</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
-            <img className={styles.image} src="./productslider/4.jpeg" />
+            <img className={styles.image} src="/productslider/4.jpeg" alt="prodimg" />
             <div className={styles.desc}>Paintings</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
-            <img className={styles.image} src="./productslider/5.jpeg" />
+            <img className={styles.image} src="/productslider/5.jpeg" alt="prodimg" />
             <div className={styles.desc}>Paintings</div>
           </a>
         </SwiperSlide>

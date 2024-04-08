@@ -3,7 +3,7 @@ import Navbar from "../componenets/Navbar";
 import ScrollButton from "../componenets/ScrollToTop";
 import Footer from "../componenets/Footer";
 
-const returnpolicy = () => {
+const ReturnPolicy = () => {
   return (
     <>
       <Navbar />
@@ -39,4 +39,4 @@ const returnpolicy = () => {
   );
 };
 
-export default returnpolicy;
+export default ReturnPolicy;

@@ -50,8 +50,9 @@ export default function DontMissTheseSlider() {
         className="mySwiper "
       >
         {Product_schema.map((product) => (
+          // eslint-disable-next-line react/jsx-key
           <SwiperSlide className="mySwiperSlide">
-            <ProductCard product={product} />
+            <ProductCard product={product} key={product.id} />
           </SwiperSlide>
         ))}
       </Swiper>

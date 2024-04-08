@@ -34,7 +34,6 @@ export default function ProductSlider() {
         slidesPerView={2}
         spaceBetween={0}
         loop={true}
-        grid={true}
         pagination={{
           clickable: true,
         }}
@@ -49,8 +48,8 @@ export default function ProductSlider() {
         }}
         className="mySwiper "
       >
-        {Product_schema.map((product) => (
-          <SwiperSlide className="mySwiperSlide">
+        {Product_schema.map((product, index) => (
+          <SwiperSlide key={index} className="mySwiperSlide">
             <ProductCard product={product} />
           </SwiperSlide>
         ))}

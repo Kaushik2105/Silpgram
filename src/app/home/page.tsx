@@ -5,7 +5,7 @@ import Homescreen from "./HomeScreen";
 import Footer from "../componenets/Footer";
 import ScrollButton from "../componenets/ScrollToTop";
 
-const home = () => {
+const Home = () => {
   return (
     <>
       <Navbar />
@@ -16,4 +16,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

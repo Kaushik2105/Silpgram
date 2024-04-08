@@ -1,5 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom"
 import { SiGoogleearth } from "react-icons/si";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
@@ -18,7 +19,7 @@ const Footer = () => {
 
       <div className={styles.links}>
         <div className={styles.symbol}>
-          <a href="/" className={styles.symbol_a}>
+          <Link to="/" className={styles.symbol_a}>
             <img
               className={styles.image}
               src="./footer/Silpgram_logo__3_-resized.png"
@@ -27,7 +28,7 @@ const Footer = () => {
             <div className={styles.tagline}>
               We decorate world with traditions
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.lower}>
@@ -44,36 +45,36 @@ const Footer = () => {
             <h3 className={styles.header}>Helpful Links</h3>
 
             <div className={styles.link}>
-              <a href="aboutus" className={styles.link_a}>
+              <Link to="/about" className={styles.link_a}>
                 About
-              </a>
+              </Link>
             </div>
 
             <div className={styles.link}>
-              <a href="privacypolicy" className={styles.link_a}>
+              <Link to="/privacypolicy" className={styles.link_a}>
                 Privacy Policy
-              </a>
+              </Link>
             </div>
 
             <div className={styles.link}>
-              <a href="returnpolicy" className={styles.link_a}>
+              <Link to="/returnpolicy" className={styles.link_a}>
                 Return Policy
-              </a>
+              </Link>
             </div>
 
             <div className={styles.link}>
-              <a href="termsandconditions" className={styles.link_a}>
+              <Link to="/termsandconditions" className={styles.link_a}>
                 Terms and Conditions
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className={styles.contact_us}>
             <h3 className={styles.header}>Contact Us</h3>
-            <a href="#" className={styles.link_a}>
+            <Link to="" className={styles.link_a}>
               <MdEmail color="yellow" size="50px" />
               setup@silpgram.com
-            </a>
+            </Link>
 
             <a href="#" className={styles.link_a}>
               <SiGoogleearth color="yellow" size="50px" />

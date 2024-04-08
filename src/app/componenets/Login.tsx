@@ -1,58 +1,73 @@
 import React from "react";
-import * as Components from './LoginComponents';
+import {
+  Container,
+  SignUpContainer,
+  SignInContainer,
+  Form,
+  Title,
+  Input,
+  Button,
+  Anchor,
+  OverlayContainer,
+  Overlay,
+  LeftOverlayPanel,
+  RightOverlayPanel,
+  Paragraph,
+  GhostButton,
+} from './LoginComponents';
 
 function Login() {
     const [signIn, toggle] = React.useState(true);
      return(
-         <Components.Container>
-             <Components.SignUpContainer signinIn={signIn}>
-                 <Components.Form>
-                     <Components.Title>Create Account</Components.Title>
-                     <Components.Input type='text' placeholder='Name' />
-                     <Components.Input type='email' placeholder='Email' />
-                     <Components.Input type='password' placeholder='Password' />
-                     <Components.Button>Sign Up</Components.Button>
-                 </Components.Form>
-             </Components.SignUpContainer>
+         <Container>
+             <SignUpContainer signinIn={signIn}>
+                 <Form>
+                     <Title>Create Account</Title>
+                     <Input type='text' placeholder='Name' />
+                     <Input type='email' placeholder='Email' />
+                     <Input type='password' placeholder='Password' />
+                     <Button>Sign Up</Button>
+                 </Form>
+             </SignUpContainer>
 
-             <Components.SignInContainer signinIn={signIn}>
-                  <Components.Form>
-                      <Components.Title>Sign in</Components.Title>
-                      <Components.Input type='email' placeholder='Email' />
-                      <Components.Input type='password' placeholder='Password' />
-                      <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-                      <Components.Button>Sigin In</Components.Button>
-                  </Components.Form>
-             </Components.SignInContainer>
+             <SignInContainer signinIn={signIn}>
+                  <Form>
+                      <Title>Sign in</Title>
+                      <Input type='email' placeholder='Email' />
+                      <Input type='password' placeholder='Password' />
+                      <Anchor href='#'>Forgot your password?</Anchor>
+                      <Button>Sigin In</Button>
+                  </Form>
+             </SignInContainer>
 
-             <Components.OverlayContainer signinIn={signIn}>
-                 <Components.Overlay signinIn={signIn}>
+             <OverlayContainer signinIn={signIn}>
+                 <Overlay signinIn={signIn}>
 
-                 <Components.LeftOverlayPanel signinIn={signIn}>
-                     <Components.Title>Welcome Back!</Components.Title>
-                     <Components.Paragraph>
+                 <LeftOverlayPanel signinIn={signIn}>
+                     <Title>Welcome Back!</Title>
+                     <Paragraph>
                          To keep connected with us please login with your personal info
-                     </Components.Paragraph>
-                     <Components.GhostButton onClick={() => toggle(true)}>
+                     </Paragraph>
+                     <GhostButton onClick={() => toggle(true)}>
                          Sign In
-                     </Components.GhostButton>
-                     </Components.LeftOverlayPanel>
+                     </GhostButton>
+                     </LeftOverlayPanel>
 
-                     <Components.RightOverlayPanel signinIn={signIn}>
-                       <Components.Title>Hello, Friend!</Components.Title>
-                       <Components.Paragraph>
+                     <RightOverlayPanel signinIn={signIn}>
+                       <Title>Hello, Friend!</Title>
+                       <Paragraph>
                            Enter Your personal details and start journey with us
-                       </Components.Paragraph>
-                           <Components.GhostButton onClick={() => toggle(false)}>
+                       </Paragraph>
+                           <GhostButton onClick={() => toggle(false)}>
                                Sigin Up
-                           </Components.GhostButton> 
-                     </Components.RightOverlayPanel>
+                           </GhostButton> 
+                     </RightOverlayPanel>
  
-                 </Components.Overlay>
-             </Components.OverlayContainer>
+                 </Overlay>
+             </OverlayContainer>
 
-         </Components.Container>
+         </Container>
      )
 }
 
-export default Login
+export default Login;

@@ -3,7 +3,7 @@ import Navbar from "../componenets/Navbar";
 import ScrollButton from "../componenets/ScrollToTop";
 import Footer from "../componenets/Footer";
 
-const termsandconditions = () => {
+const TermsConditions = () => {
   return (
     <>
       <Navbar />
@@ -39,4 +39,4 @@ const termsandconditions = () => {
   );
 };
 
-export default termsandconditions;
+export default TermsConditions;

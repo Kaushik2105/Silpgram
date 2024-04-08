@@ -3,7 +3,7 @@ import Footer from "../componenets/Footer";
 import Navbar from "../componenets/Navbar";
 import ScrollButton from "../componenets/ScrollToTop";
 
-const aboutus = () => {
+const About = () => {
   return (
     <>
       <Navbar />
@@ -39,4 +39,4 @@ const aboutus = () => {
   );
 };
 
-export default aboutus;
+export default About;

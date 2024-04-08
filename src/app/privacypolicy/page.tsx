@@ -3,7 +3,7 @@ import Navbar from "../componenets/Navbar";
 import ScrollButton from "../componenets/ScrollToTop";
 import Footer from "../componenets/Footer";
 
-const privacypolicy = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <Navbar />
@@ -39,4 +39,4 @@ const privacypolicy = () => {
   );
 };
 
-export default privacypolicy;
+export default PrivacyPolicy;
