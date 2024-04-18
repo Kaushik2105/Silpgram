@@ -15,7 +15,7 @@ type Product = {
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
     <Card className={styles.card}>
-      <img src={product.image} alt="" />
+      <img className={styles.product_image} src={product.image} alt="" />
 
       <div className={styles.data}>
         <h3 className={styles.product_name}>{product.name}</h3>

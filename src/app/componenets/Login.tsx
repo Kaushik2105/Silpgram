@@ -32,10 +32,10 @@ function Login() {
 
              <SignInContainer signinIn={signIn}>
                   <Form>
-                      <Title>Sign in</Title>
-                      <Input type='email' placeholder='Email' />
-                      <Input type='password' placeholder='Password' />
-                      <Anchor href='#'>Forgot your password?</Anchor>
+                      <Title className="text-black">Sign in</Title>
+                      <Input className="text-black" type='email' placeholder='Email' />
+                      <Input className="text-black" type='password' placeholder='Password' />
+                      <Anchor className="text-black" href='#'>Forgot your password?</Anchor>
                       <Button>Sigin In</Button>
                   </Form>
              </SignInContainer>

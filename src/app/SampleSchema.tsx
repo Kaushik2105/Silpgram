@@ -1,6 +1,6 @@
 const Product_schema = [
   {
-    name: "product 1",
+    name: "Copper Jug",
     id: 1,
     rating: 1,
     price: 10000,
@@ -19,7 +19,7 @@ const Product_schema = [
     ],
   },
   {
-    name: "product 2",
+    name: "Copper Bottle",
     id: 2,
     rating: 2,
     price: 10000,
@@ -38,7 +38,7 @@ const Product_schema = [
     ],
   },
   {
-    name: "product 3",
+    name: "Mud Glasses",
     rating: 3,
     id: 3,
     price: 10000,
@@ -57,7 +57,7 @@ const Product_schema = [
     ],
   },
   {
-    name: "product 4",
+    name: "Mud Pot",
     id: 4,
     rating: 4,
     price: 10000,
@@ -76,7 +76,7 @@ const Product_schema = [
     ],
   },
   {
-    name: "product 5",
+    name: "Bamboo Bottle",
     id: 5,
     rating: 5,
     price: 10000,
@@ -95,7 +95,7 @@ const Product_schema = [
     ],
   },
   {
-    name: "product 6",
+    name: "Copper Bottle",
     id: 6,
     rating: 3,
     price: 10000,

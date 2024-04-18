@@ -8,10 +8,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
-
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-
 import Login from "./Login";
 
 const modalstyle = {
@@ -30,14 +28,14 @@ function Navbar() {
   return (
     <div className="mb-[100px]">
       <nav className="w-full bg-yellow-400 fixed top-0 left-0 right-0 z-10 ">
-        <div className="items-center justify-between my-auto mx-auto lg:max-w-7xl md:items-center md:flex mt-5">
+        <div className="items-center my-auto mx-auto md:items-center md:flex mt-3">
           <div>
-            <div className="flex items-center justify-between md:py-5 md:block">
-              <Link to="/">
+            <div className="flex items-center justify-between ">
+              <Link to="/" className="pl-16">
                 <Image
                   src="/8-removebg-preview.png"
-                  height={150}
-                  width={370}
+                  height={80}
+                  width={170}
                   alt="logo"
                 />
               </Link>
@@ -67,51 +65,47 @@ function Navbar() {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  md:hover:bg-transparent">
-                  <Link
-                    className="flex justify-center align-middle"
-                    to="/about"
-                    onClick={() => setNavbar(!navbar)}
-                  >
+              <ul className="h-screen md:h-auto items-center justify-between md:flex ">
+                <li className="pb-3 md:px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent">
+                  <div className="relative w-[630px] h-[40px]">
                     <input
                       placeholder=" Search for kitchen, paintings, decorware and more"
-                      className="w-[560px] h-[40px] outline-none rounded-lg text-black"
-                    ></input>
-                    <SearchIcon className="mt-2 ml-2 text-black" />
-                  </Link>
+                      className="w-full h-full outline-none rounded-3xl text-black bg-lime-100 pl-5 pr-10"
+                    />
+                    <SearchIcon className="absolute cursor-pointer right-2 top-1/2 transform -translate-y-1/2 text-white bg-orange-500 rounded-full" />
+                  </div>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  md:hover:bg-transparent">
+                <li className="pb-3 text-lg py-2 md:px-6 text-center border-b-2 md:border-b-0  md:hover:bg-transparent">
                   <Link
                     className="flex text-black"
                     to="#Wishlist"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    <FavoriteIcon />
+                    <FavoriteIcon className="text-amber-800" />
                     Wishlist
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  md:hover:bg-transparent">
+                <li className="pb-3 text-lg py-2 px-6 text-center  border-b-2 md:border-b-0  md:hover:bg-transparent">
                   <Link
                     className="flex text-black"
                     to="/cart"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    <ShoppingCartIcon />
+                    <ShoppingCartIcon className="text-amber-800" />
                     Cart
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:bg-transparent">
+                <li className="pb-3 text-lg py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:bg-transparent">
                   <Link
                     className="flex text-black"
                     to="#Notifications"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    <NotificationsIcon />
+                    <NotificationsIcon className="text-amber-800" />
                     Notifications
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
+                <li className="pb-3 text-lg py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link to="#Sign-In" onClick={() => setNavbar(!navbar)}>
                     <div>
                       <button

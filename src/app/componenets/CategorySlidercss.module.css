@@ -1,24 +1,43 @@
-.header{
-    font-size: 250%;
-    padding-top: 10px;
-    padding-left: 5%;
+.container {
+  margin-top: 50px;
 }
 
-.link{
-    position: relative;
-    text-align: center;
+.header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 250%;
+  padding-top: 10px;
+  padding-left: 5%;
+  margin-bottom: 10px;
 }
 
-.image{
-    max-height: 400px;
-    width: 100%;
+.mySwiperSlide {
+  height: 400px;
 }
-.desc{
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+
+.link {
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/3;
+}
+.desc {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  background-color: white;
+  width: 100%;
 }

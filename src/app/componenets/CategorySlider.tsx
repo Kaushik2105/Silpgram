@@ -15,7 +15,8 @@ import { Pagination } from "swiper/modules";
 export default function ShopByCategorySlider() {
   return (
     <>
-      <h3 className={styles.header}>Shop By Category</h3>
+    <div className={styles.container}>
+      <h3 className={styles.header}>Shop by category</h3>
       <Swiper
         slidesPerView={4}
         spaceBetween={0}
@@ -25,7 +26,7 @@ export default function ShopByCategorySlider() {
         }}
         breakpoints={{
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 5,
           },
           650: {
             slidesPerView: 4,
@@ -43,13 +44,13 @@ export default function ShopByCategorySlider() {
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
             <img className={styles.image} src="/productslider/2.jpeg" alt="prodimg" />
-            <div className={styles.desc}>Paintings</div>
+            <div className={styles.desc}>Daily Needs</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
             <img className={styles.image} src="/productslider/3.jpeg" alt="prodimg" />
-            <div className={styles.desc}>Paintings</div>
+            <div className={styles.desc}>Home Decor</div>
           </a>
         </SwiperSlide>
         <SwiperSlide className={styles.mySwiperSlide}>
@@ -61,10 +62,11 @@ export default function ShopByCategorySlider() {
         <SwiperSlide className={styles.mySwiperSlide}>
           <a className={styles.link} href="#">
             <img className={styles.image} src="/productslider/5.jpeg" alt="prodimg" />
-            <div className={styles.desc}>Paintings</div>
+            <div className={styles.desc}>Accessories</div>
           </a>
         </SwiperSlide>
       </Swiper>
+      </div>
     </>
   );
 }

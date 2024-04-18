@@ -7,12 +7,13 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   background-color: #fff;
   border-radius: 10px;
+  backdrop-filter: blur(100px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
   width: 100%;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   left: 20%;
 `;
 
@@ -41,16 +42,24 @@ export const SignInContainer = styled.div<ContainerProps>`
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
+  opacity: 1;
   left: 0;
   width: 50%;
   z-index: 2;
 
   ${(props) =>
-    props.signinIn !== true ? `transform: translateX(100%);` : null}
+    props.signinIn !== true
+     ? `
+     transform: translateX(100%);
+     visibility: hidden;
+     opacity: 0;
+     ` 
+        : null}
 `;
 
 export const Form = styled.form`
-  background-image: url("./Login/signin.jpeg");
+  background-image: url("./Login/signin2.jpeg");
+  opacity: 0.8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +73,7 @@ export const Title = styled.h1`
   font-weight: bold;
   margin: 0;
   font-size: 50px;
+  opacity: 1;
 `;
 
 export const Input = styled.input`
@@ -72,6 +82,7 @@ export const Input = styled.input`
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
+  opacity: 1;
 `;
 
 export const Button = styled.button`
@@ -91,10 +102,12 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
+  opacity: 1;
 `;
 export const GhostButton = styled(Button)`
   background-color: transparent;
   border-color: #ffffff;
+  opacity: 1;
 `;
 
 export const Anchor = styled.a`

@@ -23,6 +23,7 @@ import { Grid, Navigation, Pagination, Scrollbar } from "swiper/modules";
 export default function DontMissTheseSlider() {
   return (
     <>
+    <div className={styles.container}>
       <div className={styles.upper}>
         <h3 className={styles.header}>Don't Miss These !!!</h3>
         <a className={styles.anchor} href="#">
@@ -56,6 +57,7 @@ export default function DontMissTheseSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
     </>
   );
 }

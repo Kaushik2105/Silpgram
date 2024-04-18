@@ -23,6 +23,7 @@ import { Grid, Navigation, Pagination, Scrollbar } from "swiper/modules";
 export default function RecentlyViewedSlider() {
   return (
     <>
+    <div className={styles.container}>
       <div className={styles.upper}>
         <h3 className={styles.header}>Recently Viewed</h3>
         <a className={styles.anchor} href="#">
@@ -54,6 +55,7 @@ export default function RecentlyViewedSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
     </>
   );
 }
