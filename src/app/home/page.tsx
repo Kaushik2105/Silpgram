@@ -1,9 +1,9 @@
 import React from "react";
 
-import Navbar from "../componenets/Navbar";
+import Navbar from "../components/Navbar";
 import Homescreen from "./HomeScreen";
-import Footer from "../componenets/Footer";
-import ScrollButton from "../componenets/ScrollToTop";
+import Footer from "../components/Footer";
+import ScrollButton from "../components/ScrollToTop";
 
 const Home = () => {
   return (

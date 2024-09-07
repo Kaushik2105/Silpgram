@@ -1,9 +1,9 @@
 import React from "react";
-import MainSlider from "../componenets/MainSlider";
-import CategorySlider from "../componenets/CategorySlider";
-import ProductSlider from "../componenets/ProductSlider";
-import RecentlyViewedSlider from "../componenets/RecentlyViewedSlider";
-import DontMissTheseSlider from "../componenets/DontMissTheseSlider";
+import MainSlider from "../components/MainSlider";
+import CategorySlider from "../components/CategorySlider";
+import ProductSlider from "../components/ProductSlider";
+import RecentlyViewedSlider from "../components/RecentlyViewedSlider";
+import DontMissTheseSlider from "../components/DontMissTheseSlider";
 
 const Homescreen = () => {
   return (

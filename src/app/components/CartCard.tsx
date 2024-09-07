@@ -1,17 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import photo from "../../../public/h.jpeg"
 import { XCircle } from "lucide-react";
+import HImage from "../../../public/h.jpeg"
 
 function Card(props: { name: string; quantity: number; price: number }) {
   return (
     <div className="bg-white rounded-md md:w-11/12 h-1/4 md:flex md:flex-row md:justify-between sm:flex sm:flex-row m-5">
       <div className="md:flex md:flex-row sm:flex sm:flex-row">
-        <img
-          src="../../../public/h.jpeg"
+        <div className="h-[200px] w-full md:w-[160px] md:h-[160px] sm:w-max items-center p-3 rounded-md">
+        <Image
+          src={HImage}
           alt="logo"
-          className="h-[200px] w-full md:w-[160px] md:h-[160px] sm:w-max items-center p-3 rounded-md"
+          width={160}
+          height={200}
         />
+        </div>
         <div className="md:flex md:flex-col md:w-5/6 sm:flex sm:flex-col p-5  sm:w-1/2">
           <h4 className="text-5xl text-left font-semibold font-sans ">
             {props.name}

@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../componenets/Footer";
-import Navbar from "../componenets/Navbar";
-import ScrollButton from "../componenets/ScrollToTop";
+import Footer from "../components/Footer"
+import Navbar from "../components/Navbar"
+import ScrollButton from "../components/ScrollToTop";
 
 const About = () => {
   return (

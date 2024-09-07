@@ -19,10 +19,10 @@ import {
 function Login() {
     const [signIn, toggle] = React.useState(true);
      return(
-         <Container>
+         <Container className="backdrop-blur" signinIn={signIn}>
              <SignUpContainer signinIn={signIn}>
                  <Form>
-                     <Title>Create Account</Title>
+                     <Title className="text-amber-500">Create Account</Title>
                      <Input type='text' placeholder='Name' />
                      <Input type='email' placeholder='Email' />
                      <Input type='password' placeholder='Password' />
@@ -32,9 +32,9 @@ function Login() {
 
              <SignInContainer signinIn={signIn}>
                   <Form>
-                      <Title className="text-black">Sign in</Title>
-                      <Input className="text-black" type='email' placeholder='Email' />
-                      <Input className="text-black" type='password' placeholder='Password' />
+                      <Title className="text-amber-500">Sign in</Title>
+                      <Input type='email' placeholder='Email' />
+                      <Input type='password' placeholder='Password' />
                       <Anchor className="text-black" href='#'>Forgot your password?</Anchor>
                       <Button>Sigin In</Button>
                   </Form>

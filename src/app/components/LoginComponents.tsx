@@ -58,8 +58,7 @@ export const SignInContainer = styled.div<ContainerProps>`
 `;
 
 export const Form = styled.form`
-  background-image: url("./Login/signin2.jpeg");
-  opacity: 0.8;
+  background-image: url("./Login/signin.jpeg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,16 +72,17 @@ export const Title = styled.h1`
   font-weight: bold;
   margin: 0;
   font-size: 50px;
-  opacity: 1;
 `;
 
 export const Input = styled.input`
   background-color: #eee;
-  border: none;
+  border-bottom: #f6a200 solid 3px;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
-  opacity: 1;
 `;
 
 export const Button = styled.button`
@@ -102,12 +102,10 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
-  opacity: 1;
 `;
 export const GhostButton = styled(Button)`
   background-color: transparent;
   border-color: #ffffff;
-  opacity: 1;
 `;
 
 export const Anchor = styled.a`

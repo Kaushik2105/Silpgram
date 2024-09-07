@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import HImage from "../../../public/h.jpeg"
+
 import Magnifier from "react-magnifier";
 import RecentlyViewedSlider from "./RecentlyViewedSlider";
 
@@ -82,6 +84,16 @@ function Product(props: {
     }
   }
 
+  class Magnifier extends React.Component {
+    render() {
+      return (
+        <div>
+          <Image src={HImage} alt="Magnifier" />
+        </div>
+      );
+    }
+  }
+
   const source = "/1.jpeg";
   return (
     <div>
@@ -89,7 +101,7 @@ function Product(props: {
       <div className="flex p-3 px-3 bg-[#FFFEE1] h-full">
         <div className="p-11 flex">
           {/* <Image src='/h.png' height={551} width={736} alt={props.name}/> */}
-          <Magnifier src="/h.jpeg" width={736} height={551} />
+          <Magnifier/>
           <div className="flex flex-col">
             <TwitterShareButton url={window.location.href}>
               <TwitterIcon size={32} round={true} />

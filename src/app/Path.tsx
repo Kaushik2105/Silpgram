@@ -1,7 +1,7 @@
 "use client"
 
 import Home from "./home/page"
-import Cart from "../app/componenets/Cart"
+import Cart from "./components/Cart"
 import About from "../app/aboutus/page"
 import PrivacyPolicy from "./privacypolicy/page"
 import ReturnPolicy from "./returnpolicy/page"
