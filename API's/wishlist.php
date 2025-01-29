@@ -15,11 +15,9 @@ try {
 
     header('Content-Type: application/json');
 
-    // Return the data in JSON format
     echo json_encode($wishlistItems);
 
 } catch (PDOException $e) {
-    // Return error message if the connection fails
     echo json_encode(['error' => $e->getMessage()]);
 }
 ?>
